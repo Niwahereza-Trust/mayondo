@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mayondo Furniture - Customer Form</title>
+  <link rel="stylesheet" href="./customers.css">
+</head>
+<body>
+  
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <div class="logo">Mayondo</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="login.html">Home</a></li>
+          <li><a href="customers.html">customers</a></li>
+      <li><a href="price.html">Prices</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="report.html">Reports</a></li>
+      <li><a href="stock.html">Stock</a></li>
+    </ul>
+  </nav>
+  <div class="form-container">
+    <h2>Mayondo Furniture - Customer Form</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="product">Interested Product:</label>
+      <select id="product" name="product" required>
+        <option value="">--Select--</option>
+        <option value="sofa">Sofa</option>
+        <option value="bed">Bed</option>
+        <option value="table">Table</option>
+        <option value="chair">Chair</option>
+        <option value="wardrobe">Wardrobe</option>
+      </select>
+
+      <label for="message">Message or Custom Request:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Mayondo Furniture Company
+    contact us
+    <br>
+    0771218171
+    <br>
+    0740412617
+    
+  </div>
+
+</body>
+</html>
