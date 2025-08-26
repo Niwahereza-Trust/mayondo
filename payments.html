@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Payments</title>
+  <link rel="stylesheet" href="payments.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">Mayondo</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="customers.html">Customer</a></li>
+      <li><a href="price.html">Prices</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="report.html">Reports</a></li>
+      <li><a href="stock.html">Stock</a></li>
+      <li><a href="payments.html">Payments</a></li>
+    </ul>
+  </nav>
+      <div class="container">
+    <div class="card">
+  <h2>Customer Payment Records</h2>
+
+  
+  <form id="paymentForm">
+    <input type="text" id="customerName" placeholder="Customer Name" required>
+    <input type="text" id="productName" placeholder="Product Name" required>
+    <input type="number" id="amount" placeholder="Amount Paid" required>
+    <select id="paymentType" required>
+      <option value="">-- Payment Type --</option>
+      <option value="Cash">Cash</option>
+      <option value="Cheque">Cheque</option>
+      <option value="Bank Overdraft">Bank Overdraft</option>
+    </select>
+    <input type="date" id="paymentDate" required>
+    <button type="submit">Record Payment</button>
+  </form>
+
+  <h3>Recorded Payments</h3>
+  <table id="paymentTable">
+    <thead>
+      <tr>
+        <th>Customer</th>
+        <th>Product</th>
+        <th>Amount</th>
+        <th>Payment Type</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="payments.js"></script>
+    <footer>
+      <p>&copy; 2025 Mayondo Wood and Furniture Ltd. All rights reserved.</p>
+      contact us on Watsapp
+      <br> 
+      0771218171
+      <br>
+      0740412917
+      <br>
+      on our email
+      <br> 
+      niwaherezat5@gmail.com
+      <br>
+      niwaherezatrust6@gmail.com 
+   </footer>
+</body>
+</html>
